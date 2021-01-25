@@ -16,13 +16,13 @@
     </div>
     <div id="root">
         <ul>
+            @foreach ($data['response'] as $cd)
             <li>
-                @foreach ($data['response'] as $cd)
-                <h3>{{ $cd['title'] }}</h3> <br>{{ $cd['author'] }}<br>{{ $cd['genre'] }}<br> <img :src="" alt="">
-                @endforeach
-            </li>    
+            <h3>{{ $cd['title'] }}</h3> <br>{{ $cd['author'] }}<br>{{ $cd['year'] }}<br> <img src="{{ $cd['poster'] }}" alt="">
+            </li>
+            @endforeach    
         </ul>
-        <label for="cars">Seleziona un genere:</label>
+        {{-- <label for="cars">Seleziona un genere:</label>
 
         <select name="cars" id="cars">
             <option value="tutti">Tutti</option>
@@ -30,7 +30,7 @@
             <option value="rock">Rock</option>
             <option value="metal">Metal</option>
             <option value="jazz">Jazz</option>
-        </select>
+        </select> --}}
     </div>
 
 </body>
