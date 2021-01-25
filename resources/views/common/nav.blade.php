@@ -6,7 +6,7 @@
         </div>
         <div class="col-md-2 hidden-xs col-lg-2"><h1>porfolio</h1></div>
         <div class="col-md-2 hidden-xs col-lg-2"><a href="/about"><h1>about</h1></a></div>
-        <div class="col-md-2 hidden-xs col-lg-2"><h1>contact</h1></div>
+        <div class="col-md-2 hidden-xs col-lg-2"><h1><a href="/dischi">dischi</a></h1></div>
     </div>
     </div>
 </nav>
